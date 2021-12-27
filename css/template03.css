@@ -899,6 +899,15 @@ header .container .megamenu .mega-link li:hover a::after {
     background-color: var(--global-color);
     position: relative;
 }
+.skills .container .info .skil div span{
+    display: block;
+    /* width: 80%; */
+    height: 100%;
+    background-color: var(--main-color-alt);
+    transition: 0.5s;
+    /* z-index: 1; */
+}
+/*
 .skills .container .info .skil div::before {
     content: "";
     position: absolute;
@@ -919,6 +928,7 @@ header .container .megamenu .mega-link li:hover a::after {
 .skills .container .info .skil.python div::before {
     width: 80%;
 }
+*/
 .skills .container .info .skil div::after {
     content: "80%";
     position: absolute;

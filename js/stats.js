@@ -1,8 +1,20 @@
+// progres
+let progr = document.querySelectorAll(".skills span");
+let skillsSection = document.querySelector(".skills");
+
+/* stats */
 let numbe = document.querySelectorAll(".stats h3");
 let section = document.querySelector(".stats");
 let started = false;
 
 window.onscroll = function () {
+    //progres
+    if (window.scrollY >= skillsSection.offsetTop - 100) {
+        progr.forEach((span) => {
+            span.style.width = span.dataset.width;
+        })
+    }
+    //stats
     if (window.scrollY >= section.offsetTop) {
         if (!started) {
             numbe.forEach((e) => startCount(e));
@@ -43,3 +55,4 @@ let timeDown = setInterval(() => {
         clearInterval(timeDown);
     }
 },1000)
+
