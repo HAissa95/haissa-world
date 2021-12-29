@@ -1,4 +1,4 @@
-// progres
+
 let progr = document.querySelectorAll(".skills span");
 let skillsSection = document.querySelector(".skills");
 
